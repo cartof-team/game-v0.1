@@ -1,8 +1,8 @@
-#include "BaseGame.h"
+#include "Application.h"
 
 int main()
 {
-BaseGame b;
-b.MainLoop();
+Application app;
+app.MainLoop();
 return 0;
 }
