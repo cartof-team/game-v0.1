@@ -596,21 +596,7 @@ int main()
     srand(time(0));
 
     m.Randomize();
-    s.initShow();
-    while(window.isOpen())
-    {
-        while(window.pollEvent(e))
-        {
-            if(e.type==sf::Event::Closed)
-                window.close();
-        }
-        if(c.getElapsedTime().asSeconds()>1)
-        {
-            c.restart();
-        }
-        window.clear();
-        s.update();
-        window.display();
-    }
+    Application app;
+    app.MainLoop();
     return 0;
 }
