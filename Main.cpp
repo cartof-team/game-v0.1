@@ -5,6 +5,7 @@
 #include <vector>
 #include "util.h"
 #include "rooms.h"
+#include "Application.h"
 
 int Size=100;
 int WindowX=800;
